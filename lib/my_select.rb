@@ -1,17 +1,12 @@
-def my_select(collection)
- # your code here!
-end
-
+def my_select(array) 
+i = 0
 new_arr = []
-if collection.length > 0
-  while i < collection.length
-    if yield(collection[i])
-      new_arr << collection[i]
-    end
-    i+=1
-  end
-  else
-    puts "Empty collection"
-  end
-  new_arr
+
+while count < array.size
+  if yield(array[count]) == true
+  result.push(array[count])
+end
+  count += 1
+end
+result
 end
